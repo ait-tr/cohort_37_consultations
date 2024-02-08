@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Xanh Mono', monospace; */
+  font-family: monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgb(136, 145, 145);
+}
+
+header {
+  /* position: fixed;
+  top: 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(227, 195, 225);
+  font-size: 46px;
+  padding: 20px;
+}
+
+main {
+  background-color: rgb(162, 174, 202);
+  font-size: 40px;
+  padding: 20px;
+  margin: 30px 40px;
+}
+
+footer {
+  background-color: rgb(239, 163, 234);
+  font-size: 46px;
+  padding: 20px;
+}
+
+.orange-img {
+  width: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(36, 139, 55);
+}
+
+/* textarea {
+  margin: 40px;
+} */
+
+p {
+  font-size: 24px;
+  color: rgb(36, 139, 55);
+}
+
+/* комбинатор потомка */
+/* p a {
+  color: rgb(166, 79, 79);
+} */
+
+/* main a {
+  color:blue;
+} */
+
+main .planet-link {
+  color: blue;
+}
+/*  */
+
+/* дочерний комбинатор*/
+main > h2 {
+  font-size: 50px;
+}
+
+p > a {
+  font-size: 60px;
+}
+
+nav > a {
+  border: 2px solid rgb(61, 9, 45);
+}
+/*  */
+
+/* создание модального окна */
+.modal {
+  position: fixed;
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  width: 40%;
+  height: 30%;
+  background-color: aliceblue;
+  padding: 20px;
+  border: 2px solid rgb(105, 99, 99);
+}
+/*  */
